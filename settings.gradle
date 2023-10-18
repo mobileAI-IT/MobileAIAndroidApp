@@ -1,0 +1,8 @@
+include ':app'
+rootProject.name = "Artificial Intelligence Framework to Protect Children from Harmful Digital Content"
+include ':java'
+include ':openCvLibrary460'
+include ':java'
+include ':openCVLibrary3410'
+include ':openCVLibrary3410'
+include ':sdk'

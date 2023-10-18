@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        ></include>
+
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#35454D">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/ana_sayfa_header"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="28dp"
+                android:background="#757575"
+                android:paddingTop="6dp"
+                android:text="Help"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="25dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp">
+
+                <Button
+                    android:id="@+id/set_interval_buton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/menu_buttons"
+                    android:onClick="setInterval"
+                    android:textAllCaps="false" />
+
+                <TextView
+                    android:id="@+id/set_interval_text"
+                    android:layout_width="383dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/set_interval_buton"
+                    android:onClick="setInterval"
+                    android:paddingStart="12dp"
+                    android:text="Set Interval"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/set_user_id_buton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/menu_buttons"
+                    android:onClick="setUserId"
+                    android:textAllCaps="false" />
+
+                <TextView
+                    android:id="@+id/set_user_id_text"
+                    android:layout_width="383dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/set_user_id_buton"
+                    android:onClick="setUserId"
+                    android:paddingStart="12dp"
+                    android:text="Set User ID"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/set_file_number_buton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/menu_buttons"
+                    android:onClick="setFileNumber"
+                    android:textAllCaps="false" />
+
+                <TextView
+                    android:id="@+id/set_file_number_text"
+                    android:layout_width="383dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/set_file_number_buton"
+                    android:onClick="setFileNumber"
+                    android:paddingStart="12dp"
+                    android:text="Set File Number"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/set_capture_type"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/menu_buttons"
+                    android:onClick="setCaptureType"
+                    android:textAllCaps="false" />
+
+                <TextView
+                    android:id="@+id/set_capture_type_text"
+                    android:layout_width="383dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/set_capture_type"
+                    android:onClick="setCaptureType"
+                    android:paddingStart="12dp"
+                    android:text="Set Capture Type"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/set_edge_type"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/menu_buttons"
+                    android:onClick="setEdgeType"
+                    android:textAllCaps="false" />
+
+                <TextView
+                    android:id="@+id/set_edge_type_text"
+                    android:layout_width="383dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/set_edge_type"
+                    android:onClick="setEdgeType"
+                    android:paddingStart="12dp"
+                    android:text="Set Edge Type"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/back_buton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/menu_buttons"
+                    android:onClick="back_buton"
+                    android:textAllCaps="false" />
+
+                <TextView
+                    android:id="@+id/back_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/back_buton"
+                    android:onClick="back_buton"
+                    android:paddingStart="12dp"
+                    android:text="Back"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

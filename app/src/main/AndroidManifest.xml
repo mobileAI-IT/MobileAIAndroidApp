@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bakas.it.objectdetection">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+
+    <application
+        android:name="bakas.it.objectdetection.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Object Detection"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name="bakas.it.objectdetection.HelpActivity" />
+        <activity android:name="bakas.it.objectdetection.MenuActivity" />
+        <activity android:name="bakas.it.objectdetection.CameraActivity" />
+        <activity android:name="bakas.it.objectdetection.DisplayActivity" />
+        <activity android:name="bakas.it.objectdetection.HomePageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="bakas.it.objectdetection.MainActivity" />
+
+        <service
+            android:name="bakas.it.objectdetection.ScreenshotService"
+            android:enabled="true" />
+        <service
+            android:name="bakas.it.objectdetection.VideoRecorderService"
+            android:enabled="true" />
+        <service
+            android:name="bakas.it.objectdetection.CameraService"
+            android:enabled="true"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

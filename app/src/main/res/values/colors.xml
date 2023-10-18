@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2198F3</color><!--Uygulama ana rengi-->
+    <color name="colorPrimaryDark">#2198F3</color><!--Uygulama ana karanlık rengi ama bunu kullanmayacağız-->
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#141414</color>
+    <color name ="red">#F44336</color>
+    <color name ="green">#20C50E</color>
+    <color name ="yellow">#CDDC39</color>
+
+</resources>

@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#35454D"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:mask="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#35454D">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:context=".IslemlerActivity">
+
+                <TextView
+                    android:id="@+id/menu_header"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="28dp"
+                    android:background="#757575"
+                    android:paddingTop="6dp"
+                    android:text="MENU"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_set_interval"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set Interval: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+
+                    <Spinner
+                        android:id="@+id/sp_set_interval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_set_user_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set User E-mail: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/txt_set_user_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_set_file_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set File Number: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/txt_set_file_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textColor="@android:color/background_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_set_comp_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set Comp: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/txt_set_comp_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:textColor="@android:color/background_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_change_safe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mode 1 : "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/txt_change_safe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_change_sus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mode 2 : "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/txt_change_sus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_change_violence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mode 3 : "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/txt_change_violence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_set_language"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set Language: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+
+                    <Spinner
+                        android:id="@+id/sp_set_language"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_set_capture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set Capture Type: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+
+                    <Spinner
+                        android:id="@+id/sp_set_capture"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_set_edgedetection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set Edge Type: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+
+                    <Spinner
+                        android:id="@+id/sp_set_edgedetection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_set_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set Box: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+                    <CheckBox android:id="@+id/sp_set_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_set_model_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AI Model: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+
+                    <Spinner
+                        android:id="@+id/sp_set_model_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_all_mdl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PG All Model: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+                    <CheckBox android:id="@+id/sp_all_mdl_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_all_mdl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BabyCam All Model: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+                    <CheckBox android:id="@+id/sp_baby_all_mdl_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_set_yellow_min_threshold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set Min Threshold: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/txt_set_yellow_min_threshold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:textColor="@android:color/background_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_set_yellow_max_threshold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Set Max Threshold: "
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/txt_set_yellow_max_threshold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:textColor="@android:color/background_light" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_below="@id/scroll"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_save"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/menu_buttons"
+                        android:onClick="save_button"
+                        android:textAllCaps="false" />
+
+                    <TextView
+                        android:id="@+id/lbl_save"
+                        android:layout_width="383dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/btn_save"
+                        android:onClick="save_button"
+                        android:paddingStart="12dp"
+                        android:text="Save Changes"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_below="@id/scroll"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_help"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp"
+                        android:background="@drawable/menu_buttons"
+                        android:onClick="help_button"
+                        android:textAllCaps="false" />
+
+                    <TextView
+                        android:id="@+id/lbl_help"
+                        android:layout_width="383dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/btn_help"
+                        android:onClick="help_button"
+                        android:paddingStart="12dp"
+                        android:text="Help"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_below="@id/scroll"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_version"
+                        android:layout_width="383dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:onClick="help_button"
+                        android:paddingStart="12dp"
+                        android:text="v4.0"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
